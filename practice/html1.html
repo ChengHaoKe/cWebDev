@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Adding external CSS style sheets-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>
+            Data Analysis Team
+        </title>
+        <!-- Add javascript function code -->
+        <script type="text/javascript" src="func.js">
+        </script>
+    </head>
+    <body>
+        <h2 style="color:deepskyblue;">
+            Data Analysis Team
+        </h2>
+        <h3>
+            I. What do we do?
+        </h3>
+        <p>
+            This is a Website test! It really is only a <span style="color:coral;"><em>test</em></span>
+        </p>
+        <a href="https://infinityfree.net/">
+            Free web hosting
+        </a>
+        <br>
+        <a href="http://www.alliance.hk/index">
+            <img src="http://www.alliance.hk/img/acs_logo.svg" width="200", height="200">
+        </a>
+        <!-- Table codes -->
+        <!-- <table border="1" style="border:solid;"> -->
+        <table>
+            <tr id="header">
+                <td>DA</td><td>Current Task / Occupation</td>
+            </tr>
+            <tr>
+                <td>CH</td><td>RTP calculation</td>
+            </tr>
+            <tr>
+                <td>Nigel</td><td>Data Accuracy</td>
+            </tr>
+            <tr>
+                    <td>Sean</td><td>Is now a manager elsewhere</td>
+            </tr>
+            <tr>
+                    <td>Dave</td><td>Studying in the US</td>
+            </tr>     
+            <tr>
+                    <td>New guy</td><td>?????</td>
+            </tr>                                      
+        </table>
+        <br>
+        <!-- drop down list / onblur takes effect when cursor clicks something else-->
+        <select name='droplist' style="color:dimgrey;" id="drop0" onblur="select0();">
+            <option value="old" style="color:blue;">AFT</option>
+            <option value="new" style="color:green;">ACS</option>
+            <option value="tgp" style="color:purple;">TGP</option>
+        </select>
+        <span id="select">
+            Selection
+        </span>
+        <button onclick="display();">
+            Button
+        </button>
+        <p id="out0">
+        </p>
+        <!-- Input text box -->
+        <input id="tbox0" type="text" onblur="check0();" placeholder="xxxxx"/>
+        <span id="eval">
+        </span>
+        <br>
+        <br>
+        <input type="text" value="read only" readonly/>
+        <br>
+        <!-- Button -->
+        <button onclick="display1();">
+                Button2
+            </button>
+        <p id="out1">
+            Enter text above
+        </p>
+    </body>
+</html>

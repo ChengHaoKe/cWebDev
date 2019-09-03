@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Adding external CSS style sheets-->
+        <link rel="stylesheet" type="text/css" href="web1.css">
+        <title>
+            Data Service Request Completed
+        </title>
+        <!-- javascript to generate random number and round it -->
+        <script type="text/javascript">
+        function getid(){
+            document.getElementById("rand0").innerHTML = "Order Number: " + 
+            Math.round(Math.random() * 10000000000)
+        }
+        </script>
+    </head>
+    <body onload="getid();">
+        <br>
+        <h2>Request Received!</h2>
+        <p id="rand0" style="color: white"></p>
+        <p style="color: white">Status: Processing</p>
+    </body>
+</html>

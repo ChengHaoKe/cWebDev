@@ -1,0 +1,79 @@
+/* css for coursera.html */
+
+html, body {
+    width: 100%;
+    background-color: black;
+}
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 0px solid white;
+    color: white;
+    /* to stop table from shifting if row content too long */
+    white-space: nowrap;
+}
+
+td {
+    padding: 0 10px 0 0;
+}
+
+/* to stop table from shifting if row content too long */
+td:last-child{
+    width:50%;
+}
+
+h1 {
+    color: mediumaquamarine;
+    /* margin: 20px; */
+    text-align:center;
+}
+
+h2 {
+    color: cornflowerblue;
+    text-align:center;
+}
+
+h3 {
+    color: mediumaquamarine;
+    /* margin: 20px; */
+    text-align:center;
+}
+
+h4 {
+    color: mediumaquamarine;
+    text-align:center;
+}
+
+p {
+    text-align:center;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+    background-position:center;
+}
+
+.button {
+    background-color: deepskyblue;
+    color: white;
+    cursor: pointer;
+    padding: 8px 15px 8px 15px;
+    text-decoration: none;
+    /* box-sizing: content-box; */
+    border-radius: 2px;
+    font-size: 120%
+    /* border: yellow; */
+    /* height:10px;
+    width: 100%; */
+}
+
+.price {
+    color: cornflowerblue;
+    font-size: 90%;
+}
+
+#span0, #span1, #span2, #span3, #span4 {
+    font-size: 80%;
+}

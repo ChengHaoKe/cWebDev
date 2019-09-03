@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Adding external CSS style sheets-->
+        <link rel="stylesheet" type="text/css" href="coursera.css">
+        <title>
+            Data Service Request
+        </title>
+        <!-- Add javascript function code -->
+        <script type="text/javascript" src="coursera.js">
+        </script>
+    </head>
+    <body>
+        <a href="https://www.coursera.org/learn/web-development/" style="color: lightblue">
+            Peer-graded Assignment for Introduction to Web Development (Coursera)
+        </a>
+        <br>
+        <img src="http://intercontinental-academia.ubias.net/images/coursera-logo/image">
+        <br>
+        <form action="#">
+            <div>
+                <h1>
+                    Request Form
+                </h1>
+                <br>
+                <h3>
+                    Data Analysis and Statistics Report Request
+                </h3>
+                <br>
+                <br>
+                <!-- Table codes -->
+                <table>
+                    <tr>
+                        <td>First Name: </td>
+                        <td><input type="text" id="tbox0" placeholder="xxxxx" onblur="jbox0();"/></td>
+                        <td><span id="span0">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name: </td>
+                        <td><input type="text" id="tbox1" placeholder="xxxxx" onblur="jbox1();"/></td>
+                        <td><span id="span1"></td>
+                    </tr> 
+                    <tr>
+                        <td>Occupation: </td>
+                        <td><input type="text" id="tbox2" placeholder="xxxxx" onblur="jbox2();"/></td>
+                        <td><span id="span2"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Company / School: </td>
+                        <td><input type="text" id="tbox3" placeholder="xxxxx" onblur="jbox3();"/></td>
+                        <td><span id="span3"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number: </td>
+                        <td><input type="text" id="tbox4" placeholder="0000-000-000" onblur="jbox4();"/></td>
+                        <td><span id="span4"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <span class="pricet">Pricing:</span>
+                        </td>
+                        <td>
+                            <br>
+                            <span class="price">Statistics Services:</span>
+                            <br>
+                            <span class="price">Visualization Reports:</span>
+                            <br>
+                            <span class="price">ETL Services:</span>
+                        </td>
+                        <td>
+                            <br>
+                            <span class="price">$1000</span>
+                            <br>
+                            <span class="price">$800</span>
+                            <br>
+                            <span class="price">$900</span>
+                        </td>
+                    <tr>
+                    <tr>
+                        <td><br>Order (Type and Quantity): </td>
+                        <td>
+                            <br>
+                            <input type="checkbox" id="cbox0" name="order" value="yes" onclick="quan0(); total();"/>
+                            <span id="chspan0">Statistics Services</span>
+                            <br>
+                            <input type="checkbox" id="cbox1" name="order" value="yes" onclick="quan1(); total();"/>
+                            <span id="chspan1">Visualization Reports</span>
+                            <br>
+                            <input type="checkbox" id="cbox2" name="order" value="yes" onclick="quan2(); total();"/>
+                            <span id="chspan2">ETL Services</span>
+                            <br>
+                        </td>
+                        <td>
+                            <br>
+                            <span id="qu0">Quantity: </span>
+                            <input id="cbt0" type="number" placeholder="0" min="0" max="50" onclick="inc0(); total();"/>
+                            <br>
+                            <span id="qu1">Quantity: </span>
+                            <input id="cbt1" type="number" placeholder="0" min="0" max="50"  onclick="inc1(); total();"/>
+                            <br>
+                            <span id="qu2">Quantity: </span>
+                            <input id="cbt2" type="number" placeholder="0" min="0" max="50"  onclick="inc2(); total();"/>
+                            <br>
+                        </td>
+                    </tr>
+                        <td><br>Order Total: </td>
+                        <td><br><input id="order" type="number" placeholder=0 readonly/></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td>Method of Payment: </td>
+                        <td>
+                            <select name='droplist' style="color:dimgrey;" id="drop0" onclick="mpay();">
+                                    <option value="Visa" style="color:blue;">Visa</option>
+                                    <option value="PayPal" style="color:green;">PayPal</option>
+                                    <option value="Coupon" style="color:purple;">Coupon</option>
+                            </select>
+                        </td>
+                        <td><span id="pay" style="color: deepskyblue">Selected Visa</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <!-- Order button -->
+                        <td colspan="2">
+                            <br>
+                            <br>
+                            <span class="button" onclick="overall();">Confirm Order</span>
+                        </td>
+                    </tr>                    
+                </table>
+                <br><br>
+                <!-- Order summary -->
+                <p id="sum0"></p>
+            </form>
+        </div>
+        <br>
+    </body>
+</html>
